@@ -5,7 +5,7 @@ export const DesignTarget = ({ imagen, titulo, texto, link }) => {
     <article className="relative flex flex-col justify-center items-center text-unterbau-white md:w-1/2">
       <div className="flex flex-col items-center absolute gap-2">
         <span className="text-4xl font-semibold">{titulo}</span>
-        <span className="font-extralight">{texto}</span>
+        <span className="font-extralight text-center">{texto}</span>
         <button className="bg-unterbau-red rounded-full px-4 py-1">
           Conoce más
         </button>
