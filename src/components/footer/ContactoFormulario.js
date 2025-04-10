@@ -1,9 +1,18 @@
 import * as React from "react"
 import { CiLocationOn, CiMail } from "react-icons/ci"
+import { useLocation } from "@reach/router"
 
 export const ContactoFormulario = () => {
+  const location = useLocation()
+
   return (
-    <section className="-mx-5 md:-mx-16 -mt-11 bg-unterbau-white text-unterbau-dark px-5 py-10 md:px-48 space-y-5 md:space-y-8">
+    <section
+      className={`-mx-5 md:-mx-16 -mt-11 px-5 py-10 md:px-48 space-y-5 md:space-y-8 ${
+        location.pathname === "/contacto/"
+          ? "text-unterbau-white bg-unterbau-dark"
+          : "bg-unterbau-white text-unterbau-dark"
+      } ${location.pathname === "/blog/" && "hidden"}`}
+    >
       <article className="flex justify-between items-center md:justify-start md:gap-5">
         <span className="flex gap-2 items-center">
           <CiLocationOn /> Ciudad de México
@@ -27,7 +36,11 @@ export const ContactoFormulario = () => {
             <input
               id="nombre"
               placeholder="Escribe aqui"
-              className="border-b rounded-none border-unterbau-dark py-2 focus:outline-none"
+              className={`border-b rounded-none py-2 focus:outline-none ${
+                location.pathname === "/contacto/"
+                  ? "bg-transparent border-unterbau-white"
+                  : "border-unterbau-dark"
+              }`}
             />
           </div>
           <div className="flex flex-col md:w-[40%]">
@@ -35,7 +48,11 @@ export const ContactoFormulario = () => {
             <input
               id="apellido"
               placeholder="Escribe aqui"
-              className="border-b rounded-none border-unterbau-dark py-2 focus:outline-none"
+              className={`border-b rounded-none py-2 focus:outline-none ${
+                location.pathname === "/contacto/"
+                  ? "bg-transparent border-unterbau-white"
+                  : "border-unterbau-dark"
+              }`}
             />
           </div>
         </div>
@@ -45,7 +62,11 @@ export const ContactoFormulario = () => {
             <input
               id="correo"
               placeholder="Escribe aqui"
-              className="border-b rounded-none border-unterbau-dark py-2 focus:outline-none"
+              className={`border-b rounded-none py-2 focus:outline-none ${
+                location.pathname === "/contacto/"
+                  ? "bg-transparent border-unterbau-white"
+                  : "border-unterbau-dark"
+              }`}
             />
           </div>
           <div className="flex flex-col md:w-[40%]">
@@ -53,7 +74,11 @@ export const ContactoFormulario = () => {
             <input
               id="telefono"
               placeholder="Escribe aqui"
-              className="border-b rounded-none border-unterbau-dark py-2 focus:outline-none"
+              className={`border-b rounded-none py-2 focus:outline-none ${
+                location.pathname === "/contacto/"
+                  ? "bg-transparent border-unterbau-white"
+                  : "border-unterbau-dark"
+              }`}
             />
           </div>
         </div>
@@ -62,13 +87,21 @@ export const ContactoFormulario = () => {
           <input
             id="mensaje"
             placeholder="Escribe aqui"
-            className="border-b rounded-none border-unterbau-dark py-2 focus:outline-none"
+            className={`border-b rounded-none py-2 focus:outline-none ${
+              location.pathname === "/contacto/"
+                ? "bg-transparent border-unterbau-white"
+                : "border-unterbau-dark"
+            }`}
           />
         </div>
         <div className="flex justify-center">
           <button
-            type="submit"
-            className="bg-unterbau-dark text-unterbau-white py-1.5 px-5 rounded-full mt-5"
+            type="button"
+            className={`py-1.5 px-5 rounded-full mt-5 md:font-semibold ${
+              location.pathname === "/contacto/"
+                ? "bg-unterbau-white text-unterbau-dark"
+                : "bg-unterbau-dark text-unterbau-white"
+            }`}
           >
             Enviar mensaje
           </button>

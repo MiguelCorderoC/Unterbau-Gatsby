@@ -8,12 +8,19 @@
 import * as React from "react"
 import Header from "./header"
 import { Footer } from "./Footer"
+import { useLocation } from "@reach/router"
 
 const Layout = ({ children }) => {
+  const location = useLocation()
+
   return (
     <>
       <Header />
-      <main className="px-5 py-10 md:px-16 space-y-10 md:space-y-16">
+      <main
+        className={`px-5 py-10 md:px-16 space-y-10 md:space-y-16 ${
+          location.pathname === "/contacto/" && "py-0 -mt-20"
+        }`}
+      >
         {children}
       </main>
       <Footer />

@@ -2,8 +2,10 @@ import * as React from "react"
 import { CiLocationOn } from "react-icons/ci"
 import { FaInstagram } from "react-icons/fa"
 import { FaLinkedinIn } from "react-icons/fa6"
+import { TbLetterX } from "react-icons/tb"
 
 export const Suscribirme = () => {
+  const [notificationVisible, setNotificatioVisible] = React.useState(false)
   return (
     <section className="text-unterbau-white bg-unterbau-dark space-y-8 md:space-y-0">
       <article className="flex justify-between items-start">
@@ -25,7 +27,7 @@ export const Suscribirme = () => {
             <FaLinkedinIn />
           </div>
         </article>
-        <article className="text-center space-y-3">
+        <article className="text-center space-y-3 relative lg:flex lg:flex-col">
           <span className="md:hidden">¡Suscríbete a nuestro Newsletter!</span>
           <span className="hidden md:block">
             Recibe contenido sobre estrategias de diseño y novedades
@@ -35,10 +37,29 @@ export const Suscribirme = () => {
               placeholder="Tu correo"
               className="w-full rounded-full px-4 py-3 focus:outline-none focus:ring-0 text-unterbau-dark"
             />
-            <button className="absolute right-3 bg-unterbau-dark text-unterbau-white rounded-full px-4 py-1.5">
+            <button
+              onClick={() => {
+                setNotificatioVisible(true)
+              }}
+              className="absolute right-3 bg-unterbau-dark text-unterbau-white rounded-full px-4 py-1.5"
+            >
               Suscribirme
             </button>
-          </div>
+          </div>{" "}
+          {notificationVisible && (
+            <div className="block lg:flex justify-center">
+              <div className="lg:absolute bg-unterbau-red text-unterbau-white px-5 py-2 flex items-center justify-between gap-5 -top-12">
+                ¡Ya estás suscrito! Revisa tu correo.{" "}
+                <button
+                  onClick={() => {
+                    setNotificatioVisible(false)
+                  }}
+                >
+                  <TbLetterX />
+                </button>
+              </div>
+            </div>
+          )}
         </article>
       </article>
     </section>
