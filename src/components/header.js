@@ -11,7 +11,7 @@ const Header = () => {
   const [visible, setVisible] = React.useState(false)
   return (
     <header
-      className={`px-5 py-2 lg:px-16 lg:py-8 ${
+      className={`px-5 py-2 lg:px-16 lg:py-8 fixed z-10 w-full top-0 ${
         location.pathname === "/nosotros/" || location.pathname === "/blog/"
           ? "bg-unterbau-white text-unterbau-dark"
           : "bg-unterbau-dark text-unterbau-white "
