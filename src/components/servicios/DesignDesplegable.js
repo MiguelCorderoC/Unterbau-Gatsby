@@ -1,7 +1,13 @@
 import * as React from "react"
 import { FaMinus, FaPlus } from "react-icons/fa"
 
-export const DesignDesplegable = ({ titulo, texto, imagen, children }) => {
+export const DesignDesplegable = ({
+  titulo,
+  texto,
+  imagen,
+  children,
+  childrenImages,
+}) => {
   const [visible, setVisible] = React.useState(false)
 
   return (
@@ -28,7 +34,8 @@ export const DesignDesplegable = ({ titulo, texto, imagen, children }) => {
           className="h-32 w-full object-cover lg:h-40"
         />
       </article>
-      {children}
+      {visible && children}
+      {visible && childrenImages}
     </>
   )
 }

@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main
-        className={`px-5 py-10 md:px-16 space-y-10 md:space-y-16 ${
+        className={`px-5 py-10 lg:px-16 space-y-10 lg:space-y-16 ${
           location.pathname === "/contacto/" && "py-0 -mt-20"
         }`}
       >

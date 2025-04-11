@@ -4,15 +4,15 @@ import { Link } from "gatsby"
 
 export const NuestraEstrategia = () => {
   return (
-    <section className="space-y-5 md:flex flex-row-reverse items-center justify-center gap-10">
+    <section className="space-y-5 lg:flex flex-row-reverse items-center justify-center gap-10">
       <article className="flex flex-col gap-3 items-start">
         <span className="text-5xl font-semibold">
           NUESTRA <br /> ESTRATEGIA
         </span>
         <p className="text-xl">
           Crear proyectos de diseño rentables,{" "}
-          <br className="hidden md:block" /> que inspiren a más empresas a
-          invertir <br className="hidden md:block" /> en mejorar la vida de sus
+          <br className="hidden lg:block" /> que inspiren a más empresas a
+          invertir <br className="hidden lg:block" /> en mejorar la vida de sus
           usuarios.
         </p>
         <Link
@@ -22,7 +22,7 @@ export const NuestraEstrategia = () => {
           Habla con nosotros
         </Link>
       </article>
-      <article className="md:w-[50%]">
+      <article className="lg:w-[50%]">
         <img
           src={imgEstrategia}
           alt="Nuestra estrategia"

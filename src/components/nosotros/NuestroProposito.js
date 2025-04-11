@@ -4,15 +4,15 @@ import imgProposito from "../../assets/images/possessed-photography-g29arbbvPjo-
 
 export const NuestroProposito = () => {
   return (
-    <section className="space-y-5 md:flex justify-center items-center gap-10">
-      <article className="flex flex-col gap-2 items-start md:gap-4">
+    <section className="space-y-5 lg:flex justify-center items-center gap-10">
+      <article className="flex flex-col gap-2 items-start lg:gap-4">
         <span className="text-6xl font-semibold">
           NUESTRO <br /> PROPÓSITO
         </span>
         <p>
-          Lograr que cada persona que <br className="hidden md:block" />{" "}
+          Lograr que cada persona que <br className="hidden lg:block" />{" "}
           interactúe con un diseño nuestro, no
-          <br className="hidden md:block" /> experimente sentimientos negativos.
+          <br className="hidden lg:block" /> experimente sentimientos negativos.
         </p>
         <Link
           to="/contacto/"
@@ -21,7 +21,7 @@ export const NuestroProposito = () => {
           Habla con nosotros
         </Link>
       </article>
-      <article className="md:w-[50%]">
+      <article className="lg:w-[50%]">
         <img
           src={imgProposito}
           alt="Nuestro proposito"

@@ -7,7 +7,7 @@ import imgMarca from "../../assets/images/pexels-anna-nekrashevich-7552373.jpg"
 
 export const SectionDesign = () => {
   return (
-    <section className="md:flex md:flex-wrap -mx-5 md:-mx-16">
+    <section className="lg:flex lg:flex-wrap -mx-5 lg:-mx-16">
       <DesignTarget
         imagen={imgProducto}
         titulo={"Product Design"}

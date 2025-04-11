@@ -2,7 +2,7 @@ import * as React from "react"
 
 export const DesignTarget = ({ imagen, titulo, texto, link }) => {
   return (
-    <article className="relative flex flex-col justify-center items-center text-unterbau-white md:w-1/2">
+    <article className="relative flex flex-col justify-center items-center text-unterbau-white lg:w-1/2">
       <div className="flex flex-col items-center absolute gap-2">
         <span className="text-4xl font-semibold">{titulo}</span>
         <span className="font-extralight text-center">{texto}</span>

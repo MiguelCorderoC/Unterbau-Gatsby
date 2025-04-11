@@ -3,7 +3,7 @@ import * as React from "react"
 export const BlogSeccion = () => {
   return (
     <section>
-      <article className="space-y-5 font-semibold md:space-y-10">
+      <article className="space-y-5 font-semibold lg:space-y-10">
         <span className="flex justify-center text-7xl">BLOG</span>
         <ul className="flex justify-between">
           <li>

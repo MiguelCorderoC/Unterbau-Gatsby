@@ -8,7 +8,7 @@ export const AvisoPrivacidad = () => {
         <span>© 2025 Unterbau</span>
         <span className=" underline">Aviso de privacidad</span>
       </article>
-      <article className="absolute left-0 right-0 w-full bg-unterbau-red p-5 md:px-16 flex justify-center">
+      <article className="absolute left-0 right-0 w-full bg-unterbau-red p-5 lg:px-16 flex justify-center">
         <img src={imgUnterbau} alt="Unterbau logo negro" />
       </article>
     </section>

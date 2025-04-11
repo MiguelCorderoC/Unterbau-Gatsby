@@ -11,7 +11,7 @@ const Header = () => {
   const [visible, setVisible] = React.useState(false)
   return (
     <header
-      className={`px-5 py-2 md:px-16 md:py-8 ${
+      className={`px-5 py-2 lg:px-16 lg:py-8 ${
         location.pathname === "/nosotros/" || location.pathname === "/blog/"
           ? "bg-unterbau-white text-unterbau-dark"
           : "bg-unterbau-dark text-unterbau-white "
@@ -31,12 +31,12 @@ const Header = () => {
           onClick={() => {
             setVisible(prev => !prev)
           }}
-          className="md:hidden"
+          className="lg:hidden"
         >
           <IoMenu className="text-4xl" />
         </button>
         <MenuMobile visible={visible} onClose={() => setVisible(false)} />
-        <ul className="hidden md:flex gap-16 text-sm">
+        <ul className="hidden lg:flex gap-16 text-sm">
           <li className="flex items-center gap-3">
             <span
               className={`size-2 inline-block ${

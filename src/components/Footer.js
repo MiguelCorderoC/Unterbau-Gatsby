@@ -5,7 +5,7 @@ import { ContactoFormulario } from "./footer/ContactoFormulario"
 
 export const Footer = () => {
   return (
-    <footer className=" bg-unterbau-dark text-unterbau-white px-5 py-10 md:px-16 space-y-8 md:space-y-14">
+    <footer className=" bg-unterbau-dark text-unterbau-white px-5 py-10 lg:px-16 space-y-8 lg:space-y-14">
       <ContactoFormulario />
       <Suscribirme />
       <AvisoPrivacidad />

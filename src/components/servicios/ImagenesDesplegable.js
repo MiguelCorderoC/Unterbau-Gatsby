@@ -1,20 +1,6 @@
 import * as React from "react"
-import imgPrueba from "../../assets/images/brooke-cagle-eL4xIEuHzzk-unsplash.jpg"
 
-const imageArray = [
-  {
-    titulo: "Metodologías y tipos de diseño",
-    items: [
-      { imagen: imgPrueba, subtitulo: "Buyer Persona" },
-      { imagen: imgPrueba, subtitulo: "CX Map" },
-      { imagen: imgPrueba, subtitulo: "CX Map" },
-      { imagen: imgPrueba, subtitulo: "CX Map" },
-      { imagen: imgPrueba, subtitulo: "CX Map" },
-    ],
-  },
-]
-
-export const ImagenesDesplegable = () => {
+export const ImagenesDesplegable = ({ imageArray = [] }) => {
   return (
     <>
       {imageArray.map((seccion, index) => (
