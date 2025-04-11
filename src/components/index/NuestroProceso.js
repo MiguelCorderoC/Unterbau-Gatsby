@@ -1,9 +1,10 @@
+import { Link } from "gatsby"
 import * as React from "react"
 
 export const NuestroProceso = () => {
   return (
     <section className="space-y-3 lg:flex lg:flex-row-reverse lg:justify-between lg:items-start">
-      <article className="font-bold text-5xl flex flex-col lg:text-end lg:text-7xl">
+      <article className="font-bold text-5xl flex flex-col lg:text-end lg:text-7xl md:text-6xl">
         <span className="lg:hidden">CONOCE</span>
         <span>NUESTRO</span>
         <span className="lg:mr-40"> PROCESO</span>
@@ -18,9 +19,12 @@ export const NuestroProceso = () => {
           <br className="hidden lg:block" />
           metodologías de empatía.
         </span>
-        <button className="font-bold bg-unterbau-dark rounded-full px-5 py-1.5 text-unterbau-white">
+        <Link
+          to="/contacto/"
+          className="font-bold bg-unterbau-dark rounded-full px-5 py-1.5 text-unterbau-white"
+        >
           Contáctanos
-        </button>
+        </Link>
       </article>
     </section>
   )

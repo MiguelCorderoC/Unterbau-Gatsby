@@ -17,7 +17,7 @@ export const NuestraEstrategia = () => {
         </p>
         <Link
           to="/contacto/"
-          className="px-4 py-1.5 rounded-full bg-unterbau-dark text-unterbau-white"
+          className="px-4 py-1.5 rounded-full bg-unterbau-dark text-unterbau-white font-semibold"
         >
           Habla con nosotros
         </Link>

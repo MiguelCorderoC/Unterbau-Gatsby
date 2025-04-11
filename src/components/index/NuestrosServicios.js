@@ -1,9 +1,10 @@
+import { Link } from "gatsby"
 import * as React from "react"
 
 export const NuestrosServicios = () => {
   return (
     <section className="space-y-5 lg:flex lg:justify-between lg:items-center">
-      <article className="font-bold text-6xl flex flex-col lg:text-7xl">
+      <article className="font-bold text-6xl flex flex-col lg:text-7xl md:text-8xl">
         <span>NUESTROS</span>
         <span className="flex justify-end lg:pl-8">SERVICIOS</span>
       </article>
@@ -15,9 +16,12 @@ export const NuestrosServicios = () => {
           usuarios, impulsando tu liderazgo <br className="hidden lg:block" />
           en el mercado.
         </span>
-        <button className="font-bold bg-unterbau-dark rounded-full px-5 py-1.5 text-unterbau-white">
+        <Link
+          to="/contacto/"
+          className="font-bold bg-unterbau-dark rounded-full px-5 py-1.5 text-unterbau-white"
+        >
           Contáctanos
-        </button>
+        </Link>
       </article>
     </section>
   )

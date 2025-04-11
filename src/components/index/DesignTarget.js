@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import * as React from "react"
 
 export const DesignTarget = ({ imagen, titulo, texto, link }) => {
@@ -6,9 +7,12 @@ export const DesignTarget = ({ imagen, titulo, texto, link }) => {
       <div className="flex flex-col items-center absolute gap-2">
         <span className="text-4xl font-semibold">{titulo}</span>
         <span className="font-extralight text-center">{texto}</span>
-        <button className="bg-unterbau-red rounded-full px-4 py-1">
+        <Link
+          to="/contacto/"
+          className="bg-unterbau-red rounded-full px-4 py-1"
+        >
           Conoce más
-        </button>
+        </Link>
       </div>
       <img
         src={imagen}

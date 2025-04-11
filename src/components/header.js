@@ -18,15 +18,18 @@ const Header = () => {
       }`}
     >
       <nav className="flex justify-between items-center">
-        <img
-          src={
-            location.pathname === "/nosotros/" || location.pathname === "/blog/"
-              ? imgUnterbauLogoNegro
-              : imgUnterbauLogo
-          }
-          alt="Logo unterbau"
-          className="w-36"
-        />
+        <Link to="/">
+          <img
+            src={
+              location.pathname === "/nosotros/" ||
+              location.pathname === "/blog/"
+                ? imgUnterbauLogoNegro
+                : imgUnterbauLogo
+            }
+            alt="Logo unterbau"
+            className="w-36"
+          />
+        </Link>
         <button
           onClick={() => {
             setVisible(prev => !prev)

@@ -1,5 +1,6 @@
 import * as React from "react"
 import imgProducto from "../../assets/images/pexels-olly-3823488.jpg"
+import { Link } from "gatsby"
 
 export const MundoHumano = () => {
   return (
@@ -22,9 +23,12 @@ export const MundoHumano = () => {
           <br className="hidden lg:block" />
           innovadores. Mejor propuesta de valor.
         </p>
-        <button className="rounded-full bg-unterbau-white text-unterbau-dark px-5 py-1 font-semibold">
+        <Link
+          to="/contacto/"
+          className="rounded-full bg-unterbau-white text-unterbau-dark px-5 py-1 font-semibold"
+        >
           Contáctanos
-        </button>
+        </Link>
       </article>
       <article className="px-3">
         <img

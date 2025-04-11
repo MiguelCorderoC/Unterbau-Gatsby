@@ -20,7 +20,9 @@ export const ImagenesDesplegable = ({ imageArray = [] }) => {
                   alt="Imagen unterbau"
                   className="object-cover"
                 />
-                <span className="lg:text-sm">{image.subtitulo}</span>
+                <span className="lg:text-sm text-center">
+                  {image.subtitulo}
+                </span>
               </div>
             ))}
           </div>
