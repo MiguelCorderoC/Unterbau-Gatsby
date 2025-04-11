@@ -4,10 +4,20 @@ import imgInvestigacion from "../../assets/images/pexels-fauxels-3182772.jpg"
 import imgMarca from "../../assets/images/pexels-anna-nekrashevich-7552373.jpg"
 import imgProducto from "../../assets/images/charlesdeluvio-Lks7vei-eAg-unsplash.jpg"
 import imgServicio from "../../assets/images/crew-szCvt1gP2d4-unsplash.jpg"
-import { DesignResearchData } from "../../data/ChildrenDesignData"
+import {
+  DesignResearchData,
+  DesignBrandData,
+  DesignProductData,
+  DesignServiceData,
+} from "../../data/ChildrenDesignData"
 import { ChildrenDesplegable } from "./ChildrenDesplegable"
 import { ImagenesDesplegable } from "./ImagenesDesplegable"
-import { imageArrayResearchDesign } from "../../data/ChildrenDesignImagesData"
+import {
+  imageArrayResearchDesign,
+  imageArrayBrandDesign,
+  imageArrayProductDesign,
+  imageArrayServiceDesign,
+} from "../../data/ChildrenDesignImagesData"
 
 export const SectionDesign = () => {
   return (
@@ -29,6 +39,10 @@ export const SectionDesign = () => {
           "Analisis e investigacion de productos, marcas y servicios, a traves del metodo cientifico y herramientas de empatia"
         }
         imagen={imgProducto}
+        children={<ChildrenDesplegable arrayList={DesignProductData} />}
+        childrenImages={
+          <ImagenesDesplegable imageArray={imageArrayProductDesign} />
+        }
       />{" "}
       <DesignDesplegable
         titulo={"SERVICE DESIGN"}
@@ -36,6 +50,10 @@ export const SectionDesign = () => {
           "Analisis e investigacion de productos, marcas y servicios, a traves del metodo cientifico y herramientas de empatia"
         }
         imagen={imgServicio}
+        children={<ChildrenDesplegable arrayList={DesignServiceData} />}
+        childrenImages={
+          <ImagenesDesplegable imageArray={imageArrayServiceDesign} />
+        }
       />{" "}
       <DesignDesplegable
         titulo={"BRAND DESIGN"}
@@ -43,6 +61,10 @@ export const SectionDesign = () => {
           "Analisis e investigacion de productos, marcas y servicios, a traves del metodo cientifico y herramientas de empatia"
         }
         imagen={imgMarca}
+        children={<ChildrenDesplegable arrayList={DesignBrandData} />}
+        childrenImages={
+          <ImagenesDesplegable imageArray={imageArrayBrandDesign} />
+        }
       />
     </section>
   )
