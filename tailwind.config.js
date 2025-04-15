@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        orbitron: ["Orbitron", "sans-serif"],
+        museo: ['"Museo Sans"', "sans-serif"],
+        orbitron: ['"Orbitron"', "sans-serif"],
       },
       colors: {
         unterbau: {
