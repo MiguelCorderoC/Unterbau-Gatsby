@@ -10,10 +10,10 @@ export const ChildrenDesplegable = ({ arrayList = [] }) => {
         >
           <div className="size-3 bg-unterbau-red mt-[10px] lg:mt-0" />
           <div className="ml-5 w-full lg:flex lg:justify-between  lg:items-center">
-            <div className="text-2xl mb-3 lg:mb-0">
+            <div className="text-[20px] mb-3 lg:mb-0 font-mono">
               <span>{categoria.titulo}</span>
             </div>
-            <ul className="lg:flex lg:justify-end lg:gap-8  lg:w-[70%] w-full items-center space-y-3 lg:space-y-0">
+            <ul className="lg:flex lg:justify-end lg:gap-8  lg:w-[70%] w-full items-center space-y-3 lg:space-y-0 font-museo font-light text-[15px]">
               {categoria.items.map((item, i) => (
                 <li
                   key={i}

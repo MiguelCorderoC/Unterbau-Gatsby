@@ -13,7 +13,7 @@ export const Suscribirme = () => {
     <section
       className={`space-y-8 lg:space-y-0 ${
         location.pathname === "/contacto/"
-          ? "bg-white text-black -mx-5 px-5 py-10"
+          ? "bg-white text-black"
           : "bg-unterbau-dark text-unterbau-white"
       } `}
     >

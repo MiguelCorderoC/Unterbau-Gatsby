@@ -46,9 +46,8 @@ export const DesignProductData = [
   {
     titulo: "Landing Page Design",
     items: [
-      "Moodboard y referencias de diseño",
-      "Posicionamiento de marca interna",
-      "Posicionamiento de marca interna",
+      "Moodboard & referencias de diseño",
+      "Diseño de de features, UX & UI",
     ],
   },
 ]
@@ -93,8 +92,8 @@ export const DesignBrandData = [
     titulo: "Branding",
     items: [
       "Herramientas de entendimiento de modelo y objetivos de negocio",
-      "Investigación de fonética del mercado y diseño de personalidad de marca",
-      "3 propuestas de nombre con viabilidad de registro ante IMPI y dominios web",
+      "Investigación gráfica del mercado en lugar de fonética y Moodboard. ",
+      "3 propuestas de nombre con viabilidad de registro ante IMPI",
     ],
   },
   {
