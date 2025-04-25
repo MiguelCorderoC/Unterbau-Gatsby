@@ -21,7 +21,10 @@ export const Suscribirme = () => {
         <span className="font-black text-[20px] lg:text-5xl">
           CAPITALIZAMOS <br /> EL DISEÑO.
         </span>
-        <Link className="bg-unterbau-red text-unterbau-white rounded-lg px-5 py-1.5 font-bold text-[13px]">
+        <Link
+          to="/contacto/"
+          className="bg-unterbau-red text-unterbau-white rounded-lg px-5 py-1.5 font-bold text-[13px]"
+        >
           Contactar
         </Link>
       </article>
