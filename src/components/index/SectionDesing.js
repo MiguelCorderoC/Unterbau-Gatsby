@@ -15,18 +15,18 @@ export const SectionDesign = () => {
       />
       <DesignTarget
         imagen={imgServicio}
-        titulo={"Product Design"}
-        texto={"Web App - Mobile App - Website - Landingpage"}
+        titulo={"Service Design"}
+        texto={"Digital - POS"}
       />
       <DesignTarget
         imagen={imgInvestigacion}
-        titulo={"Product Design"}
-        texto={"Web App - Mobile App - Website - Landingpage"}
+        titulo={"Research Design"}
+        texto={"UX - CX - Product - Brand"}
       />
       <DesignTarget
         imagen={imgMarca}
-        titulo={"Product Design"}
-        texto={"Web App - Mobile App - Website - Landingpage"}
+        titulo={"Brand Design"}
+        texto={" Naming - Branding - Brand Book"}
       />
     </section>
   )

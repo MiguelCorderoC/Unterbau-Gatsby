@@ -5,11 +5,11 @@ export const DesignTarget = ({ imagen, titulo, texto, link }) => {
   return (
     <article className="relative flex flex-col justify-center items-center text-unterbau-white lg:w-1/2">
       <div className="flex flex-col items-center absolute gap-2">
-        <span className="text-4xl font-semibold">{titulo}</span>
-        <span className="font-extralight text-center">{texto}</span>
+        <span className="text-[40px] font-black">{titulo}</span>
+        <span className="text-[12px] text-center font-mono">{texto}</span>
         <Link
           to="/contacto/"
-          className="bg-unterbau-red rounded-full px-4 py-1"
+          className="bg-unterbau-red rounded-full px-4 py-1 font-museo font-bold text-[15px] mt-2"
         >
           Conoce más
         </Link>

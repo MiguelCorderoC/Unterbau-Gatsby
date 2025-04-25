@@ -1,21 +1,21 @@
 import * as React from "react"
-import img1 from "../../assets/images/brooke-cagle-eL4xIEuHzzk-unsplash.jpg"
-import img2 from "../../assets/images/possessed-photography-g29arbbvPjo-unsplash.jpg"
-import img3 from "../../assets/images/docusign-7RWBSYA9Rro-unsplash.jpg"
+import img1 from "../../assets/images/kenny-eliason-SvhXD3kPSTY-unsplash.jpg"
+import img2 from "../../assets/images/pexels-thalittlemarc-28208333.jpg"
+import img3 from "../../assets/images/pexels-quang-nguyen-vinh-222549-2165933.jpg"
 import { Link } from "gatsby"
 
 export const Proposito = () => {
   return (
     <section className="space-y-10">
       <article className="space-y-10">
-        <span className="text-6xl font-semibold lg:font-light lg:text-9xl">
+        <span className="text-[50px] font-black lg:font-light lg:text-9xl leading-[1.1]">
           DISEÑAMOS <br className="lg:hidden" />
           <p className="lg:flex justify-end">
             CON
             <br className="lg:hidden" /> PROPÓSITO
           </p>
         </span>
-        <p className="text-xl lg:hidden">
+        <p className="text-[18px] font-light lg:hidden">
           Más que un estudio creativo, somos estrategas del diseño. Partimos
           siempre de la claridad de objetivos, priorizamos el entendimiento para
           poder crear estrategias exitosas.
@@ -56,13 +56,17 @@ export const Proposito = () => {
         <img
           src={img3}
           alt="Imagen propósito"
-          className="h-28 w-[90%] lg:w-[30%] lg:h-72 object-cover"
+          className="h-28 w-[90%] lg:w-[30%] lg:h-72 object-cover object-top"
         />
       </article>
-      <p className="text-5xl font-thin lg:text-8xl">
-        <span className="lg:font-bold">Unterbau</span> nace de la necesidad de
-        brindar a las personas la libertad de interactuar con la tecnología con
-        confianza y sin sentirse juzgadas.
+      <p className="text-5xl font-thin lg:text-8xl pt-[70px] font-museo text-[40px]">
+        <span className="lg:font-bold">Unterbau</span> nace{" "}
+        <br className="md:hidden" /> de la necesidad{" "}
+        <br className="md:hidden" /> de brindar a las personas la{" "}
+        <br className="md:hidden" /> libertad de <br className="md:hidden" />{" "}
+        interactuar con <br className="md:hidden" /> la tecnología con{" "}
+        <br className="md:hidden" /> confianza y sin{" "}
+        <br className="md:hidden" /> sentirse juzgadas.
       </p>
     </section>
   )

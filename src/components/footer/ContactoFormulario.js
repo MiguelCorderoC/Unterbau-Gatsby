@@ -13,7 +13,7 @@ export const ContactoFormulario = () => {
           : "bg-unterbau-white text-unterbau-dark"
       } ${location.pathname === "/blog/" && "hidden"}`}
     >
-      <article className="flex justify-between items-center lg:justify-start lg:gap-5">
+      <article className="flex justify-between items-center lg:justify-start lg:gap-5 font-light text-[14px]">
         <span className="flex gap-2 items-center">
           <CiLocationOn /> Ciudad de México
         </span>
@@ -21,7 +21,7 @@ export const ContactoFormulario = () => {
           <CiMail /> contacto@unterbau.mx
         </span>
       </article>
-      <article className="text-4xl">
+      <article className="text-4xl font-thin text-[33px]">
         <span className="lg:hidden">
           ¿TIENES UN <br /> PROYECTO EN <br /> PUERTA? HABLEMOS
         </span>
@@ -32,11 +32,13 @@ export const ContactoFormulario = () => {
       <form className="lg:space-y-8">
         <div className="space-y-3 lg:space-y-0 lg:flex lg:justify-between">
           <div className="flex flex-col lg:w-[40%]">
-            <label htmlFor="nombre">Nombre*:</label>
+            <label htmlFor="nombre" className="font-medium text-[15px]">
+              Nombre*:
+            </label>
             <input
               id="nombre"
               placeholder="Escribe aqui"
-              className={`border-b rounded-none py-2 focus:outline-none ${
+              className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                 location.pathname === "/contacto/"
                   ? "bg-transparent border-unterbau-white"
                   : "border-unterbau-dark"
@@ -44,11 +46,13 @@ export const ContactoFormulario = () => {
             />
           </div>
           <div className="flex flex-col lg:w-[40%]">
-            <label htmlFor="apellido">Apellido*:</label>
+            <label htmlFor="apellido" className="font-medium text-[15px]">
+              Apellido*:
+            </label>
             <input
               id="apellido"
               placeholder="Escribe aqui"
-              className={`border-b rounded-none py-2 focus:outline-none ${
+              className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                 location.pathname === "/contacto/"
                   ? "bg-transparent border-unterbau-white"
                   : "border-unterbau-dark"
@@ -58,11 +62,13 @@ export const ContactoFormulario = () => {
         </div>
         <div className="space-y-3 lg:space-y-0 lg:flex lg:justify-between">
           <div className="flex flex-col mt-3 lg:mt-0 lg:w-[40%]">
-            <label htmlFor="correo">Correo*:</label>
+            <label htmlFor="correo" className="font-medium text-[15px]">
+              Correo*:
+            </label>
             <input
               id="correo"
               placeholder="Escribe aqui"
-              className={`border-b rounded-none py-2 focus:outline-none ${
+              className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                 location.pathname === "/contacto/"
                   ? "bg-transparent border-unterbau-white"
                   : "border-unterbau-dark"
@@ -70,11 +76,13 @@ export const ContactoFormulario = () => {
             />
           </div>
           <div className="flex flex-col lg:w-[40%]">
-            <label htmlFor="telefono">Teléfono*:</label>
+            <label htmlFor="telefono" className="font-medium text-[15px]">
+              Teléfono*:
+            </label>
             <input
               id="telefono"
               placeholder="Escribe aqui"
-              className={`border-b rounded-none py-2 focus:outline-none ${
+              className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                 location.pathname === "/contacto/"
                   ? "bg-transparent border-unterbau-white"
                   : "border-unterbau-dark"
@@ -83,11 +91,13 @@ export const ContactoFormulario = () => {
           </div>
         </div>
         <div className="flex flex-col mt-3">
-          <label htmlFor="mensaje">Mensaje*:</label>
+          <label htmlFor="mensaje" className="font-medium text-[15px]">
+            Mensaje*:
+          </label>
           <input
             id="mensaje"
             placeholder="Escribe aqui"
-            className={`border-b rounded-none py-2 focus:outline-none ${
+            className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
               location.pathname === "/contacto/"
                 ? "bg-transparent border-unterbau-white"
                 : "border-unterbau-dark"
@@ -97,7 +107,7 @@ export const ContactoFormulario = () => {
         <div className="flex justify-center">
           <button
             type="button"
-            className={`py-1.5 px-5 rounded-full mt-5 lg:font-semibold ${
+            className={`py-1.5 px-5 rounded-full mt-5 lg:font-semibold text-[15px] font-medium ${
               location.pathname === "/contacto/"
                 ? "bg-unterbau-white text-unterbau-dark"
                 : "bg-unterbau-dark text-unterbau-white"

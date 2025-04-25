@@ -4,12 +4,12 @@ import * as React from "react"
 export const NuestrosServicios = () => {
   return (
     <section className="space-y-5 lg:flex lg:justify-between lg:items-center">
-      <article className="font-bold text-6xl flex flex-col lg:text-7xl md:text-8xl">
+      <article className="text-6xl flex flex-col lg:text-7xl md:text-8xl font-black text-[50px]">
         <span>NUESTROS</span>
         <span className="flex justify-end lg:pl-8">SERVICIOS</span>
       </article>
-      <article className="flex flex-col items-start gap-3">
-        <span className="font-light">
+      <article className="flex flex-col items-start gap-5 font-[100] text-[17px]">
+        <span>
           Nuestro portafolio de servicios se centra en diseñar{" "}
           <br className="hidden lg:block" /> estrategias que forjan conexiones
           auténticas entre <br className="hidden lg:block" /> tu negocio y tus

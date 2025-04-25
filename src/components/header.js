@@ -12,7 +12,9 @@ const Header = () => {
   return (
     <header
       className={`px-5 py-2 lg:px-16 lg:py-8 fixed z-10 w-full top-0 ${
-        location.pathname === "/nosotros/" || location.pathname === "/blog/"
+        location.pathname === "/nosotros/" ||
+        location.pathname === "/blog/" ||
+        location.pathname === "/servicios/"
           ? "bg-unterbau-white text-unterbau-dark"
           : "bg-unterbau-dark text-unterbau-white "
       }`}
@@ -22,12 +24,13 @@ const Header = () => {
           <img
             src={
               location.pathname === "/nosotros/" ||
-              location.pathname === "/blog/"
+              location.pathname === "/blog/" ||
+              location.pathname === "/servicios/"
                 ? imgUnterbauLogoNegro
                 : imgUnterbauLogo
             }
             alt="Logo unterbau"
-            className="w-36"
+            className="w-28"
           />
         </Link>
         <button

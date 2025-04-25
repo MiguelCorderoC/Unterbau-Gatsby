@@ -1,22 +1,31 @@
+import { Link } from "gatsby"
 import * as React from "react"
 import { CiLocationOn } from "react-icons/ci"
 import { FaInstagram } from "react-icons/fa"
 import { FaLinkedinIn } from "react-icons/fa6"
 import { TbLetterX } from "react-icons/tb"
+import { useLocation } from "@reach/router"
 
 export const Suscribirme = () => {
+  const location = useLocation()
   const [notificationVisible, setNotificatioVisible] = React.useState(false)
   return (
-    <section className="text-unterbau-white bg-unterbau-dark space-y-8 lg:space-y-0">
+    <section
+      className={`space-y-8 lg:space-y-0 ${
+        location.pathname === "/contacto/"
+          ? "bg-white text-black -mx-5 px-5 py-10"
+          : "bg-unterbau-dark text-unterbau-white"
+      } `}
+    >
       <article className="flex justify-between items-start">
-        <span className="font-bold text-2xl lg:text-5xl">
+        <span className="font-black text-[20px] lg:text-5xl">
           CAPITALIZAMOS <br /> EL DISEÑO.
         </span>
-        <button className="bg-unterbau-red text-unterbau-white font-semibold rounded-lg px-5 py-1.5">
+        <Link className="bg-unterbau-red text-unterbau-white rounded-lg px-5 py-1.5 font-bold text-[13px]">
           Contactar
-        </button>
+        </Link>
       </article>
-      <article className="space-y-5 lg:flex lg:items-end lg:justify-between">
+      <article className="space-y-12 lg:flex lg:items-end lg:justify-between">
         <article className="flex justify-between lg:justify-start lg:gap-10">
           <div className="flex gap-5 items-center lg:gap-3">
             <CiLocationOn className="text-2xl" />
@@ -35,13 +44,21 @@ export const Suscribirme = () => {
           <div className="relative flex items-center">
             <input
               placeholder="Tu correo"
-              className="w-full rounded-full px-4 py-3 focus:outline-none focus:ring-0 text-unterbau-dark"
+              className={`w-full rounded-full px-4 py-3 focus:outline-none focus:ring-0 text-unterbau-dark ${
+                location.pathname === "/contacto/"
+                  ? "bg-unterbau-dark text-white"
+                  : "bg-white text-black"
+              }`}
             />
             <button
               onClick={() => {
                 setNotificatioVisible(true)
               }}
-              className="absolute right-3 bg-unterbau-dark text-unterbau-white rounded-full px-4 py-1.5"
+              className={`absolute right-3 rounded-full px-4 py-1.5 ${
+                location.pathname === "/contacto/"
+                  ? "bg-white text-black"
+                  : "bg-unterbau-dark text-white"
+              }`}
             >
               Suscribirme
             </button>
