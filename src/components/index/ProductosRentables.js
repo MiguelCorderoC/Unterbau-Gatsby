@@ -29,7 +29,7 @@ export const ProductosRentables = () => {
       <img
         src={imgManos}
         alt="Productos rentables y empáticos"
-        className="h-[700px] object-cover lg:w-full lg:h-[600px]"
+        className="h-[700px] object-cover object-[center_60%] lg:w-full lg:h-[600px]"
       />
     </section>
   )

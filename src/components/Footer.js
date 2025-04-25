@@ -7,7 +7,7 @@ export const Footer = () => {
   const location = useLocation()
   return (
     <footer
-      className={` bg-unterbau-dark text-unterbau-white px-5 py-10 lg:px-16 space-y-8 lg:space-y-14 ${
+      className={` bg-unterbau-dark text-unterbau-white px-5 py-10 lg:px-16 space-y-14 lg:space-y-14 ${
         location.pathname === "/contacto/" ? "bg-unterbau-white" : ""
       }`}
     >
