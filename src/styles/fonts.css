@@ -36,13 +36,13 @@
   font-style: normal;
 }
 
-@font-face {
+/*@font-face {
   font-family: "Museo Sans";
-  src: url("../assets/fonts/MuseoSans/MuseoSans_500_italic.otf")
+  src: url("../assets/fonts/MuseoSans/MuseoSans_500_Italic.otf")
     format("opentype");
   font-weight: 500;
   font-style: italic;
-}
+}/*
 
 @font-face {
   font-family: "Museo Sans";
