@@ -13,7 +13,7 @@ export const ProductosRentables = () => {
           <span>EMPÁTICOS</span>
         </div>
 
-        <div className="flex flex-col items-start mb-32 gap-2">
+        <div className="flex flex-col items-start mb-28 gap-4 md:mb-16">
           <span className="text-xl font-light  md:text-4xl lg:text-3xl font-mono">
             Método científico + <br className="lg:hidden" /> Metodologías de
             empatía
@@ -29,7 +29,7 @@ export const ProductosRentables = () => {
       <img
         src={imgManos}
         alt="Productos rentables y empáticos"
-        className="h-[700px] object-cover object-[center_60%] lg:w-full lg:h-[600px]"
+        className="h-[700px] object-cover lg:w-full lg:h-[600px] md:object-left"
       />
     </section>
   )

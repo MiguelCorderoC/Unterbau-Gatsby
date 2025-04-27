@@ -7,9 +7,9 @@ export const AvisoPrivacidad = () => {
   const location = useLocation()
   return (
     <section
-      className={`space-y-10 ${
+      className={`space-y-10 md:-mx-11 ${
         location.pathname === "/contacto/"
-          ? "bg-unterbau-white -mx-5 text-unterbau-dark"
+          ? "bg-unterbau-white -mx-5 text-unterbau-dark md:-mx-16"
           : "bg-unterbau-dark"
       }`}
     >

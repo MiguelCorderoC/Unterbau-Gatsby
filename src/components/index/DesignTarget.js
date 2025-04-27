@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import * as React from "react"
 
-export const DesignTarget = ({ imagen, titulo, texto, link }) => {
+export const DesignTarget = ({ imagen, titulo, texto, position }) => {
   return (
     <article className="relative flex flex-col justify-center items-center text-unterbau-white lg:w-1/2">
       <div className="flex flex-col items-center absolute gap-2">
@@ -17,7 +17,7 @@ export const DesignTarget = ({ imagen, titulo, texto, link }) => {
       <img
         src={imagen}
         alt="Imagen de diseño"
-        className="object-cover h-96 w-full"
+        className={`object-cover h-96 w-full ${position}`}
       />
     </article>
   )
