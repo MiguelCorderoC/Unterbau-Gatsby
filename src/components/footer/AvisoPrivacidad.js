@@ -37,12 +37,13 @@ export const AvisoPrivacidad = () => {
       <article className="text-center pb-10">
         <span>© 2025 Unterbau</span>
       </article>
-      <article className="absolute left-0 right-0 w-full bg-unterbau-red px-5 py-10 lg:px-16 flex justify-center">
+      <article className="absolute left-0 right-0 w-full bg-unterbau-red px-5 py-10 lg:px-32 lg:py-36 flex justify-center">
         <img
           src={
             location.pathname === "/contacto/" ? imgUnterbauBlanco : imgUnterbau
           }
           alt="Unterbau logo negro"
+          className="lg:w-[1216px] lg:h-[183px]"
         />
       </article>
     </section>

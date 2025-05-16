@@ -1,59 +1,63 @@
 import { Link } from "gatsby"
 import * as React from "react"
 import imgWalmart from "../../assets/images/walmart.jpg"
+import imgCoppel from "../../assets/logos-clientes/coppel.svg"
+import imgVenados from "../../assets/logos-clientes/Venados-blanco.png"
+import imgSinaloa from "../../assets/logos-clientes/Sinaloa_gob_blanco.svg"
+import imgChecatel from "../../assets/logos-clientes/62af7c9901393849f0924ee0_cp_logo_header.svg"
 
 export const MarcasTrabajo = () => {
   return (
-    <section className="bg-unterbau-dark text-unterbau-white -mx-5 lg:-mx-16 lg:py-20 py-10 px-5 flex flex-col gap-6 lg:gap-10">
+    <section className="bg-unterbau-dark text-unterbau-white -mx-5 lg:-mx-16 py-16 px-5 flex flex-col gap-6 lg:gap-24 lg:py-32">
       <article className="space-y-2 lg:flex lg:justify-around gap-28">
-        <div className="text-4xl lg:font-light lg:text-5xl lg:w-[50%] font-black text-[30px]">
+        <div className="text-4xl lg:font-light lg:text-[50px] font-black text-[30px]">
           <span>
             MARCAS CON LAS <br className="md:hidden lg:hidden" /> QUE{" "}
           </span>
           <br className="hidden lg:block" />
-          <span className="lg:flex justify-end">
+          <span className="lg:flex lg:pl-36 lg:pt-5">
             HEMOS
             <br className="md:hidden lg:hidden" /> TRABAJADO
           </span>
         </div>
-        <div className="flex flex-col gap-2 items-start">
+        <div className="flex flex-col gap-3 items-start">
           <p className="text-[15px] font-light">
             Objetivos diferentes, proyectos diferentes,{" "}
-            <br className="hidde lg:block" /> misma pasion
+            <br className="hidde lg:block" /> misma pasion.
           </p>
           <Link
             to="/contacto/"
             className="bg-unterbau-white text-unterbau-dark px-4 py-1.5 rounded-full font-bold text-[15px]"
           >
-            Contactanos
+            Contáctanos{" "}
           </Link>
         </div>
       </article>
-      <article className="flex gap-3 items-center justify-between lg:justify-end lg:gap-8">
+      <article className="flex gap-x-11 flex-wrap items-center justify-start lg:justify-end lg:gap-8 lg:pr-[50px]">
         <img
           src={imgWalmart}
+          alt="Logo walmart"
+          className=" w-[25%] lg:w-[10%] lg:h-[30px] object-cover"
+        />{" "}
+        <img
+          src={imgCoppel}
+          alt="Logo walmart"
+          className=" w-[25%] lg:w-[10%] lg:h-[30px] object-cover"
+        />{" "}
+        <img
+          src={imgSinaloa}
           alt="Logo walmart"
           className=" w-[25%] lg:w-[10%] lg:h-[30px]"
         />{" "}
         <img
-          src={imgWalmart}
+          src={imgChecatel}
           alt="Logo walmart"
           className=" w-[25%] lg:w-[10%] lg:h-[30px]"
         />{" "}
         <img
-          src={imgWalmart}
+          src={imgVenados}
           alt="Logo walmart"
-          className=" w-[25%] lg:w-[10%] lg:h-[30px]"
-        />{" "}
-        <img
-          src={imgWalmart}
-          alt="Logo walmart"
-          className=" w-[25%] lg:w-[10%] lg:h-[30px] hidden lg:block"
-        />{" "}
-        <img
-          src={imgWalmart}
-          alt="Logo walmart"
-          className=" w-[25%] lg:w-[10%] lg:h-[30px] hidden lg:block"
+          className=" w-[25%] lg:w-[10%] lg:h-[30px] object-cover"
         />{" "}
       </article>
     </section>

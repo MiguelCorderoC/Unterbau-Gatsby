@@ -15,17 +15,17 @@ export const ContactoFormulario = () => {
     >
       <article className="flex justify-between items-center lg:justify-start lg:gap-5 font-light text-[14px]">
         <span className="flex gap-2 items-center">
-          <CiLocationOn /> Ciudad de México
+          <CiLocationOn className="text-lg lg:text-xl" /> Ciudad de México
         </span>
         <span className="flex gap-2 items-center">
-          <CiMail /> contacto@unterbau.mx
+          <CiMail className="text-lg lg:text-xl" /> contacto@unterbau.mx
         </span>
       </article>
-      <article className="text-4xl font-thin text-[33px]">
+      <article className="font-thin text-[33px] ">
         <span className="lg:hidden">
-          ¿TIENES UN <br /> PROYECTO EN <br /> PUERTA? HABLEMOS
+          ¿TIENES UN <br /> PROYECTO EN <br /> PUERTA? ¡HABLEMOS!
         </span>
-        <span className="hidden lg:block text-6xl">
+        <span className="hidden lg:block lg:text-[60px]">
           DISEÑEMOS JUNTOS ESA <br /> GRAN IDEA
         </span>
       </article>
@@ -37,7 +37,7 @@ export const ContactoFormulario = () => {
             </label>
             <input
               id="nombre"
-              placeholder="Escribe aqui"
+              placeholder="Escribe aquí"
               className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                 location.pathname === "/contacto/"
                   ? "bg-transparent border-unterbau-white"
@@ -51,7 +51,7 @@ export const ContactoFormulario = () => {
             </label>
             <input
               id="apellido"
-              placeholder="Escribe aqui"
+              placeholder="Escribe aquí"
               className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                 location.pathname === "/contacto/"
                   ? "bg-transparent border-unterbau-white"
@@ -67,7 +67,7 @@ export const ContactoFormulario = () => {
             </label>
             <input
               id="correo"
-              placeholder="Escribe aqui"
+              placeholder="Escribe aquí"
               className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                 location.pathname === "/contacto/"
                   ? "bg-transparent border-unterbau-white"
@@ -81,7 +81,7 @@ export const ContactoFormulario = () => {
             </label>
             <input
               id="telefono"
-              placeholder="Escribe aqui"
+              placeholder="Escribe aquí"
               className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                 location.pathname === "/contacto/"
                   ? "bg-transparent border-unterbau-white"
@@ -96,7 +96,7 @@ export const ContactoFormulario = () => {
           </label>
           <input
             id="mensaje"
-            placeholder="Escribe aqui"
+            placeholder="Escribe aquí"
             className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
               location.pathname === "/contacto/"
                 ? "bg-transparent border-unterbau-white"
@@ -107,7 +107,7 @@ export const ContactoFormulario = () => {
         <div className="flex justify-center">
           <button
             type="button"
-            className={`py-1.5 px-5 rounded-full mt-5 lg:font-semibold text-[15px] font-medium ${
+            className={`py-1.5 px-5 rounded-full mt-5 lg:font-semibold text-[15px] font-medium lg:w-[174px] lg:h-[39px] ${
               location.pathname === "/contacto/"
                 ? "bg-unterbau-white text-unterbau-dark"
                 : "bg-unterbau-dark text-unterbau-white"

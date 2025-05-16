@@ -21,22 +21,26 @@ import {
 
 export const SectionDesign = () => {
   return (
-    <section className="space-y-10">
+    <section className="space-y-10 pb-[30px]">
       <DesignDesplegable
         titulo={"RESEARCH DESIGN"}
         texto={
-          "Analisis e investigacion de productos, marcas y servicios, a traves del metodo cientifico y herramientas de empatia"
+          "Análisis e investigación de productos, marcas y servicios, a través del método científico y herramientas de empatía."
         }
         imagen={imgInvestigacion}
+        moveImage={"object-[center_88%]"}
         children={<ChildrenDesplegable arrayList={DesignResearchData} />}
         childrenImages={
-          <ImagenesDesplegable imageArray={imageArrayResearchDesign} />
+          <ImagenesDesplegable
+            imageArray={imageArrayResearchDesign}
+            moveImage={"object-bottom"}
+          />
         }
       />
       <DesignDesplegable
         titulo={"PRODUCT DESIGN"}
         texto={
-          "Analisis e investigacion de productos, marcas y servicios, a traves del metodo cientifico y herramientas de empatia"
+          "Diseño de productos digitales rentables, usables y atractivos. A través de metodologías centradas en el usuario y el negocio."
         }
         imagen={imgProducto}
         children={<ChildrenDesplegable arrayList={DesignProductData} />}
@@ -47,9 +51,10 @@ export const SectionDesign = () => {
       <DesignDesplegable
         titulo={"SERVICE DESIGN"}
         texto={
-          "Analisis e investigacion de productos, marcas y servicios, a traves del metodo cientifico y herramientas de empatia"
+          "Diseño de servicio digital y piso de venta, considerando la creación de experiencia de cliente y la optimización de procesos de atención."
         }
         imagen={imgServicio}
+        moveImage={"object-[center_25%]"}
         children={<ChildrenDesplegable arrayList={DesignServiceData} />}
         childrenImages={
           <ImagenesDesplegable imageArray={imageArrayServiceDesign} />
@@ -58,7 +63,7 @@ export const SectionDesign = () => {
       <DesignDesplegable
         titulo={"BRAND DESIGN"}
         texto={
-          "Analisis e investigacion de productos, marcas y servicios, a traves del metodo cientifico y herramientas de empatia"
+          "Diseño de marca fonética y gráfica con disponibilidad de registro ante el IMPI, que conectan con sus usuarios y reflejan la esencia de cada negocio."
         }
         imagen={imgMarca}
         children={<ChildrenDesplegable arrayList={DesignBrandData} />}

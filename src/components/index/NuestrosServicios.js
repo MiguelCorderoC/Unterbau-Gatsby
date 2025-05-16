@@ -3,12 +3,12 @@ import * as React from "react"
 
 export const NuestrosServicios = () => {
   return (
-    <section className="space-y-5 lg:flex lg:justify-between lg:items-center">
-      <article className="text-6xl flex flex-col lg:text-7xl md:text-8xl font-black text-[50px]">
+    <section className="space-y-5 py-10 lg:flex lg:justify-between lg:items-center">
+      <article className="text-6xl flex flex-col font-black text-[50px] md:text-[80px]">
         <span>NUESTROS</span>
         <span className="flex justify-end lg:pl-8">SERVICIOS</span>
       </article>
-      <article className="flex flex-col items-start gap-5 font-[100] text-[17px]">
+      <article className="flex flex-col items-start gap-5 font-[100] text-[17px] lg:text-[15px]">
         <span>
           Nuestro portafolio de servicios se centra en diseñar{" "}
           <br className="hidden lg:block" /> estrategias que forjan conexiones

@@ -9,6 +9,7 @@ import { useLocation } from "@reach/router"
 const Header = () => {
   const location = useLocation()
   const [visible, setVisible] = React.useState(false)
+
   return (
     <header
       className={`px-5 py-2 lg:px-16 lg:py-8 fixed z-10 w-full top-0 ${
@@ -30,7 +31,7 @@ const Header = () => {
                 : imgUnterbauLogo
             }
             alt="Logo unterbau"
-            className="w-28"
+            className="w-28 lg:w-[152px] lg:h-[23px]"
           />
         </Link>
         <button
@@ -45,7 +46,7 @@ const Header = () => {
         <ul className="hidden lg:flex gap-16 text-sm">
           <li className="flex items-center gap-3">
             <span
-              className={`size-2 inline-block ${
+              className={`size-[10px] inline-block ${
                 location.pathname === "/" ? "bg-unterbau-red" : "bg-transparent"
               }`}
             ></span>
@@ -53,7 +54,7 @@ const Header = () => {
           </li>
           <li className="flex items-center gap-3">
             <span
-              className={`size-2 inline-block ${
+              className={`size-[10px] inline-block ${
                 location.pathname === "/servicios/"
                   ? "bg-unterbau-red"
                   : "bg-transparent"
@@ -63,7 +64,7 @@ const Header = () => {
           </li>
           <li className="flex items-center gap-3">
             <span
-              className={`size-2 inline-block ${
+              className={`size-[10px] inline-block ${
                 location.pathname === "/nosotros/"
                   ? "bg-unterbau-red"
                   : "bg-transparent"
@@ -73,7 +74,7 @@ const Header = () => {
           </li>
           <li className="flex items-center gap-3">
             <span
-              className={`size-2 inline-block ${
+              className={`size-[10px] inline-block ${
                 location.pathname === "/contacto/"
                   ? "bg-unterbau-red"
                   : "bg-transparent"
@@ -83,7 +84,7 @@ const Header = () => {
           </li>
           <li className="flex items-center gap-3">
             <span
-              className={`size-2 inline-block ${
+              className={`size-[10px] inline-block ${
                 location.pathname === "/blog/"
                   ? "bg-unterbau-red"
                   : "bg-transparent"
@@ -94,7 +95,13 @@ const Header = () => {
           <li>
             <Link
               to="/contacto"
-              className="border-dashed border-2 rounded px-2 py-1"
+              className={`rounded px-2 py-1 ${
+                location.pathname === "/servicios/" ||
+                location.pathname === "/nosotros/" ||
+                location.pathname === "/blog/"
+                  ? "border-black border-dashed border-2"
+                  : "border-dashed border-2 border-white"
+              }`}
             >
               SOLICITA UN ANTEPROYECTO
             </Link>

@@ -6,12 +6,12 @@ export const ImagenesDesplegable = ({ imageArray = [] }) => {
       {imageArray.map((seccion, index) => (
         <article
           key={index}
-          className="space-y-5 lg:flex items-center justify-between "
+          className="space-y-5 lg:pt-5 lg:flex items-center justify-between lg:items-start"
         >
-          <span className="text-[20px] font-museo font-medium lg:text-xl">
+          <span className="text-[20px] lg:text-[15px] font-museo font-medium lg:text-xl lg:font-light">
             {seccion.titulo}
           </span>
-          <div className="flex justify-center lg:justify-end flex-wrap gap-5 lg:w-[80%]">
+          <div className="flex justify-center lg:justify-end flex-wrap gap-2 lg:w-[80%]">
             {seccion.items.map((image, index) => (
               <div
                 key={index}
@@ -20,7 +20,7 @@ export const ImagenesDesplegable = ({ imageArray = [] }) => {
                 <img
                   src={image.imagen}
                   alt="Imagen unterbau"
-                  className="object-cover"
+                  className={`object-cover object-top `}
                 />
                 <span className="lg:text-sm text-center text-[12px] font-light">
                   {image.subtitulo}

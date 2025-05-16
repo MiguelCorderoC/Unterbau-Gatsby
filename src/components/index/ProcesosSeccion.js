@@ -8,7 +8,7 @@ import imgMedicion from "../../assets/icons/speedometer-kpi.svg"
 
 export const ProcesosSeccion = () => {
   return (
-    <section className="flex flex-wrap gap-5 justify-between">
+    <section className="flex flex-wrap gap-5 justify-between lg:pb-[100px]">
       <Procesos
         titulo={"ENTENDIMIENTO"}
         icono={imgEntendimiento}
