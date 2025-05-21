@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="font-museo">
+      <div className="font-museo border border-black md:border-none">
         <Header />
         <main
           className={`px-5 py-10 lg:px-16 space-y-10 lg:space-y-16 lg:pt-28 pt-20 ${

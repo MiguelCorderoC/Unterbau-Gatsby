@@ -36,6 +36,7 @@ export const SectionDesign = () => {
             moveImage={"object-bottom"}
           />
         }
+        idDesign={"researchDesign"}
       />
       <DesignDesplegable
         titulo={"PRODUCT DESIGN"}
@@ -47,6 +48,7 @@ export const SectionDesign = () => {
         childrenImages={
           <ImagenesDesplegable imageArray={imageArrayProductDesign} />
         }
+        idDesign={"productDesign"}
       />{" "}
       <DesignDesplegable
         titulo={"SERVICE DESIGN"}
@@ -59,6 +61,7 @@ export const SectionDesign = () => {
         childrenImages={
           <ImagenesDesplegable imageArray={imageArrayServiceDesign} />
         }
+        idDesign={"serviceDesign"}
       />{" "}
       <DesignDesplegable
         titulo={"BRAND DESIGN"}
@@ -70,6 +73,7 @@ export const SectionDesign = () => {
         childrenImages={
           <ImagenesDesplegable imageArray={imageArrayBrandDesign} />
         }
+        idDesign={"brandDesign"}
       />
     </section>
   )

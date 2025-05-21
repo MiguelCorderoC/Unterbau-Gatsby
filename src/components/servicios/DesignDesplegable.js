@@ -8,12 +8,13 @@ export const DesignDesplegable = ({
   children,
   childrenImages,
   moveImage,
+  idDesign,
 }) => {
   const [visible, setVisible] = React.useState(false)
 
   return (
     <>
-      <article className="space-y-3">
+      <article id={idDesign} className="space-y-3">
         <div className="border w-full h-[3px] bg-black lg:mb-16"></div>
         <div className="flex items-center justify-between lg:gap-5 pt-[10px]">
           <span className="text-3xl lg:text-5xl lg:text-nowrap font-museo font-bold text-[30px]">

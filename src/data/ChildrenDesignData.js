@@ -99,9 +99,9 @@ export const DesignBrandData = [
   {
     titulo: "Brand book",
     items: [
-      "Personalidad de marca, visión y mantra de la empresa",
-      "Paleta de colores, fuentes tipográficas",
-      "Usos correctos e incorrectos, ejemplos de aplicaciones de marca",
+      "Personalidad de marca, visión y mantra de la empresa.",
+      "Paleta de colores, fuentes tipográficas.",
+      "Usos correctos e incorrectos, ejemplos de aplicaciones de marca.",
     ],
   },
 ]

@@ -1,10 +1,11 @@
 import { Link } from "gatsby"
 import * as React from "react"
-import imgWalmart from "../../assets/images/walmart.jpg"
-import imgCoppel from "../../assets/logos-clientes/coppel.svg"
-import imgVenados from "../../assets/logos-clientes/Venados-blanco.png"
-import imgSinaloa from "../../assets/logos-clientes/Sinaloa_gob_blanco.svg"
-import imgChecatel from "../../assets/logos-clientes/62af7c9901393849f0924ee0_cp_logo_header.svg"
+import imgWalmart from "../../assets/logos-clientes/walmart-21.svg"
+import imgCoppel from "../../assets/logos-clientes/Coppel Logo.svg"
+import imgPraxia from "../../assets/logos-clientes/Praxia_logo_blanco.svg"
+import imgVenados from "../../assets/logos-clientes/Venados_logo_blanco.svg"
+import imgSinaloa from "../../assets/logos-clientes/Sinaloa_logo_negro 1.svg"
+import imgChecatel from "../../assets/logos-clientes/Cero papel logo.svg"
 
 export const MarcasTrabajo = () => {
   return (
@@ -33,9 +34,14 @@ export const MarcasTrabajo = () => {
           </Link>
         </div>
       </article>
-      <article className="flex gap-x-11 flex-wrap items-center justify-start lg:justify-end lg:gap-8 lg:pr-[50px]">
+      <article className="flex gap-x-11 lg:gap-x-14 gap-y-5 lg:mt-0 mt-3 flex-wrap items-center justify-start lg:justify-end lg:gap-8 lg:pr-[50px]">
         <img
           src={imgWalmart}
+          alt="Logo walmart"
+          className=" w-[25%] lg:w-[10%] lg:h-[30px] object-cover"
+        />{" "}
+        <img
+          src={imgPraxia}
           alt="Logo walmart"
           className=" w-[25%] lg:w-[10%] lg:h-[30px] object-cover"
         />{" "}
@@ -47,12 +53,12 @@ export const MarcasTrabajo = () => {
         <img
           src={imgSinaloa}
           alt="Logo walmart"
-          className=" w-[25%] lg:w-[10%] lg:h-[30px]"
+          className=" w-[25%] lg:w-[10%] lg:h-[30px] object-cover"
         />{" "}
         <img
           src={imgChecatel}
           alt="Logo walmart"
-          className=" w-[25%] lg:w-[10%] lg:h-[30px]"
+          className=" w-[25%] lg:w-[10%] lg:h-[30px] object-cover"
         />{" "}
         <img
           src={imgVenados}

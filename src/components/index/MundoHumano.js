@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 export const MundoHumano = () => {
   return (
     <section className="bg-unterbau-dark text-unterbau-white -mx-5 lg:-mx-16 px-5 py-10 space-y-7 lg:space-y-0 lg:flex lg:justify-center lg:gap-36 lg:items-center lg:py-16">
-      <article className="space-y-[17px] mt-[40px] lg:space-y-[30px]">
+      <article className="space-y-[17px] mt-[40px] lg:space-y-[30px] lg:pb-[50px]">
         <span className="font-black text-[30px] leading-[1.2] lg:text-[40px]">
           UN MUNDO <br className="lg:hidden" />
           CON <br className="hidden lg:block" />

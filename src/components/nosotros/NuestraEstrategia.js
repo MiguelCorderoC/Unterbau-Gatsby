@@ -20,7 +20,7 @@ export const NuestraEstrategia = () => {
             to="/contacto/"
             className="px-4 py-1.5 rounded-full bg-unterbau-dark text-unterbau-white font-bold text-[15px]"
           >
-            Hablar
+            Hablar con nosotros
           </Link>
         </div>
       </article>

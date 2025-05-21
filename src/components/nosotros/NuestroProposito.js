@@ -20,7 +20,7 @@ export const NuestroProposito = () => {
             to="/contacto/"
             className="bg-unterbau-dark text-unterbau-white rounded-full px-5 py-1.5 font-bold text-[15px] lg:font-medium"
           >
-            Hablar
+            Hablar con nosotros
           </Link>
         </div>
       </article>

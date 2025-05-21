@@ -5,9 +5,6 @@ export const BlogSeccion = () => {
   return (
     <section>
       <article className="space-y-5 font-semibold lg:space-y-10">
-        <span className="flex justify-center text-7xl lg:text-[105px] lg:font-black">
-          BLOG
-        </span>
         <ul className="flex justify-between lg:justify-around lg:text-[20px] lg:font-light">
           <li>
             <Link to="/#" className="text-start ">

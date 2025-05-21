@@ -11,7 +11,7 @@ export const AvisoPrivacidad = () => {
         location.pathname === "/contacto/"
           ? "bg-unterbau-white -mx-5 text-unterbau-dark md:-mx-16"
           : "bg-unterbau-dark"
-      }`}
+      } `}
     >
       {" "}
       <article
@@ -37,7 +37,7 @@ export const AvisoPrivacidad = () => {
       <article className="text-center pb-10">
         <span>© 2025 Unterbau</span>
       </article>
-      <article className="absolute left-0 right-0 w-full bg-unterbau-red px-5 py-10 lg:px-32 lg:py-36 flex justify-center">
+      <article className="absolute left-0 w-full bg-unterbau-red px-5 py-10 lg:px-32 lg:py-36 flex justify-center">
         <img
           src={
             location.pathname === "/contacto/" ? imgUnterbauBlanco : imgUnterbau

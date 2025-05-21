@@ -24,9 +24,15 @@ export const Suscribirme = () => {
         </span>
         <Link
           to="/contacto/"
-          className="bg-unterbau-red text-unterbau-white rounded-lg px-5 py-1.5 font-bold text-[13px] w-[110px] h-[30px] flex justify-center items-center"
+          className="bg-unterbau-red lg:hidden text-unterbau-white rounded-lg px-5 py-1.5 font-bold text-[13px] w-[110px] h-[30px] flex justify-center items-center"
         >
           Contactar
+        </Link>
+        <Link
+          to="/contacto/"
+          className="bg-unterbau-red hidden text-unterbau-white rounded-lg px-10 py-2 font-bold text-base lg:flex justify-center items-center"
+        >
+          Solicita un anteproyecto{" "}
         </Link>
       </article>
       <article className="space-y-12 lg:flex lg:items-end lg:justify-between">
@@ -64,7 +70,7 @@ export const Suscribirme = () => {
                 setNotificatioVisible(true)
                 setTimeout(() => {
                   setNotificatioVisible(false)
-                }, 5000) // 5000 ms = 5 segundos
+                }, 5000)
               }}
               className={`absolute right-3 rounded-full px-4 py-1.5 lg:w-[122px] lg:h-[28px] flex items-center justify-center ${
                 location.pathname === "/contacto/"

@@ -13,23 +13,27 @@ export const SectionDesign = () => {
         titulo={"Product Design"}
         texto={"Web App - Mobile App - Website - Landingpage"}
         position={"object-right"}
+        idSection={"productDesign"}
       />
       <DesignTarget
         imagen={imgServicio}
         titulo={"Service Design"}
         texto={"Digital - POS"}
         position={"object-left"}
+        idSection={"serviceDesign"}
       />
       <DesignTarget
         imagen={imgInvestigacion}
         titulo={"Research Design"}
         texto={"UX - CX - Product - Brand"}
         position={"object-left"}
+        idSection={"researchDesign"}
       />
       <DesignTarget
         imagen={imgMarca}
         titulo={"Brand Design"}
         texto={" Naming - Branding - Brand Book"}
+        idSection={"brandDesign"}
       />
     </section>
   )
