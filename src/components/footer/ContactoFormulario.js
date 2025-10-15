@@ -1,9 +1,35 @@
-import * as React from "react"
+import React, { useState } from "react"
 import { CiLocationOn, CiMail } from "react-icons/ci"
 import { useLocation } from "@reach/router"
+import { isEmpty } from "lodash";
 
 export const ContactoFormulario = () => {
   const location = useLocation()
+
+  const [nombre, setNombre] = useState('');
+  const [apellido, setApellido] = useState('');
+  const [email, setEmail] = useState('');
+  const [celular, setCelular] = useState('');
+  const [motivo, setMotivo] = useState('');
+  const [aviso, setAviso] = useState(false);
+
+  const redirectToWhatsapp = (e) => {
+    e.preventDefault();
+    let msg = `Hola, me interesa un anteproyecto, estos son mis datos:
+      Nombre: ${nombre} 
+      Apellido: ${apellido}
+      Email: ${email}
+    `;
+    if (!isEmpty(celular)) {
+      msg += `  Celular: ${celular}`;
+    }
+    if (!isEmpty(motivo)) {
+      msg += `
+      Motivo: ${motivo}`;
+    }
+    const link = `https://wa.me/+526672115902?text=${encodeURI(msg)}`;
+    window.open(link, '_blank');
+  };
 
   return (
     <section
@@ -95,6 +121,8 @@ export const ContactoFormulario = () => {
               <input
                 id="nombre"
                 placeholder="Escribe aquí"
+                required
+                onChange={(e) => setNombre(e.target.value)}
                 className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                   location.pathname === "/contacto/"
                     ? "bg-transparent border-unterbau-white"
@@ -129,6 +157,8 @@ export const ContactoFormulario = () => {
               <input
                 id="apellido"
                 placeholder="Escribe aquí"
+                required
+                onChange={(e) => setApellido(e.target.value)}
                 className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                   location.pathname === "/contacto/"
                     ? "bg-transparent border-unterbau-white"
@@ -169,7 +199,11 @@ export const ContactoFormulario = () => {
               </label>
               <input
                 id="correo"
+                required
+                type="email"
+                size="30"
                 placeholder="Escribe aquí"
+                onChange={(e) => setEmail(e.target.value)}
                 className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                   location.pathname === "/contacto/"
                     ? "bg-transparent border-unterbau-white"
@@ -205,6 +239,8 @@ export const ContactoFormulario = () => {
               <input
                 id="telefono"
                 placeholder="Escribe aquí"
+                type="number"
+                onChange={(e) => setCelular(e.target.value)}
                 className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                   location.pathname === "/contacto/"
                     ? "bg-transparent border-unterbau-white"
@@ -235,6 +271,7 @@ export const ContactoFormulario = () => {
             <input
               id="mensaje"
               placeholder="Escribe aquí"
+              onChange={(e) => setMotivo(e.target.value)}
               className={`border-b rounded-none py-2 focus:outline-none font-light text-[12px] ${
                 location.pathname === "/contacto/"
                   ? "bg-transparent border-unterbau-white"
@@ -246,6 +283,7 @@ export const ContactoFormulario = () => {
             <div className="flex gap-2 items-center">
               <input
                 type="checkbox"
+                onChange={() => setAviso(!aviso)}
                 className="border border-white text-white accent-transparent hidden lg:block"
               />{" "}
               <input type="checkbox" className="lg:hidden" />
@@ -256,10 +294,12 @@ export const ContactoFormulario = () => {
           <div className="flex justify-center">
             <button
               className={`py-1.5 px-5 rounded-full mt-5 lg:font-semibold text-[15px] font-medium lg:w-[174px] lg:h-[39px] ${
-                location.pathname === "/contacto/"
-                  ? "bg-unterbau-white text-unterbau-dark"
-                  : "bg-unterbau-dark text-unterbau-white"
+                !aviso || isEmpty(nombre) || isEmpty(apellido) || isEmpty(email)
+                  ? "bg-unterbau-silver text-unterbau-dark"
+                  : "bg-unterbau-white text-unterbau-dark"
               }`}
+              onClick={redirectToWhatsapp}
+              disabled={!aviso || isEmpty(nombre) || isEmpty(apellido) || isEmpty(email)}
             >
               Enviar mensaje
             </button>
