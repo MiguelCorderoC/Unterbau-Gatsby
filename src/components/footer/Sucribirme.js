@@ -5,6 +5,9 @@ import { FaInstagram } from "react-icons/fa"
 import { FaLinkedinIn } from "react-icons/fa6"
 import { TbLetterX } from "react-icons/tb"
 import { useLocation } from "@reach/router"
+import { collection, addDoc } from "firebase/firestore";
+import db from "../firebase"
+import { isEmpty } from "lodash"
 
 export const Suscribirme = () => {
   const location = useLocation()
@@ -57,6 +60,7 @@ export const Suscribirme = () => {
               onChange={e => {
                 setEmail(e.target.value)
               }}
+              type="email"
               value={email}
               className={`w-full rounded-full px-4 py-3 focus:outline-none focus:ring-0 text-unterbau-dark ${
                 location.pathname === "/contacto/"
@@ -65,13 +69,17 @@ export const Suscribirme = () => {
               }`}
             />
             <button
-              onClick={() => {
+              onClick={async () => {
                 setEmail("")
-                setNotificatioVisible(true)
-                setTimeout(() => {
-                  setNotificatioVisible(false)
-                }, 5000)
+                const doc = await addDoc(collection(db, "subscribers"), { email });
+                if (doc) {
+                  setNotificatioVisible(true)
+                  setTimeout(() => {
+                    setNotificatioVisible(false)
+                  }, 5000)
+                }
               }}
+              disabled={isEmpty(email)}
               className={`absolute right-3 rounded-full px-4 py-1.5 lg:w-[122px] lg:h-[28px] flex items-center justify-center ${
                 location.pathname === "/contacto/"
                   ? "bg-white text-black"
