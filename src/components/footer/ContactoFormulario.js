@@ -224,7 +224,7 @@ export const ContactoFormulario = () => {
                 }`}
               >
                 {" "}
-                Teléfono*:
+                Teléfono:
               </label>
               <label
                 htmlFor="mensaje"
@@ -256,7 +256,7 @@ export const ContactoFormulario = () => {
                 location.pathname === "/contacto/" ? "lg:hidden" : "block"
               }`}
             >
-              Mensaje*:
+              Mensaje:
             </label>
             <label
               htmlFor="mensaje"
@@ -286,7 +286,7 @@ export const ContactoFormulario = () => {
                 onChange={() => setAviso(!aviso)}
                 className="border border-white text-white accent-transparent hidden lg:block"
               />{" "}
-              <input type="checkbox" className="lg:hidden" />
+              <input type="checkbox" onChange={() => setAviso(!aviso)} className="lg:hidden" />
               <span>Aceptar aviso de privacidad</span>
             </div>
             <span className="hidden lg:block">*Campos obligatorios</span>
@@ -294,9 +294,9 @@ export const ContactoFormulario = () => {
           <div className="flex justify-center">
             <button
               className={`py-1.5 px-5 rounded-full mt-5 lg:font-semibold text-[15px] font-medium lg:w-[174px] lg:h-[39px] ${
-                !aviso || isEmpty(nombre) || isEmpty(apellido) || isEmpty(email)
-                  ? "bg-unterbau-silver text-unterbau-dark"
-                  : "bg-unterbau-white text-unterbau-dark"
+                !aviso || isEmpty(nombre) || isEmpty(apellido) || isEmpty(email) || location.pathname === "/contacto/"
+                  ? `${!aviso || isEmpty(nombre) || isEmpty(apellido) || isEmpty(email) || location.pathname !== "/contacto/" ? 'bg-unterbau-gray text-unterbau-white' : 'bg-unterbau-white text-unterbau-dark'}`
+                  : "bg-unterbau-dark text-unterbau-white"
               }`}
               onClick={redirectToWhatsapp}
               disabled={!aviso || isEmpty(nombre) || isEmpty(apellido) || isEmpty(email)}
